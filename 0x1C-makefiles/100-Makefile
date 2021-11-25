@@ -1,0 +1,23 @@
+.PHONY: re fclean all clean oclean
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+CFLAGS = -Wall -Werror -Wextra -pedantic
+NAME = school
+
+#builds your executable
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME) $(CFLAGS)
+
+#3deletes all Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) -f *~ $(NAME)
+#deletes the object files
+oclean:
+	$(RM) -f $(OBJ)
+#deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean:
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
+#forces recompilation of all source files
+re: oclean all
