@@ -51,13 +51,13 @@ return (-1);
 
 void p_array(int *i, int begg, int end)
 {
-        int j;
+int j;
 
-        for (j = begg; j < end; j++)
-        {
-	         if (j < end - 1)
-		     printf("%d, ", i[j]);
-		 else
-		     printf("%d\n", i[j]);
-	}
+for (j = begg; j < end; j++)
+{
+if (j < end - 1)
+printf("%d, ", i[j]);
+else
+printf("%d\n", i[j]);
+}
 }
