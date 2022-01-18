@@ -23,7 +23,7 @@ return (-1);
 while (lefty < righty)
 {
 printf("Searching in array: ");
-p_array(lefty, righty + 1);
+p_array(array, lefty, righty + 1);
 mid = (lefty + righty) / 2;
 if (array[mid] < value)
 {
