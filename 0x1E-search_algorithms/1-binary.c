@@ -19,7 +19,7 @@ size_t mid = 0;
 
 if (array == 0)
 return (-1);
- while (lefty <= righty)
+while (lefty <= righty)
 {
 printf("Searching in array: ");
 p_array(array, lefty, righty + 1);
@@ -28,7 +28,7 @@ if (array[mid] < value)
 {
 lefty = mid + 1;
 }
- else if (array[mid] > value)
+else if (array[mid] > value)
 {
 righty = mid - 1;
 }
